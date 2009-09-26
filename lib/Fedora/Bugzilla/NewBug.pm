@@ -27,7 +27,7 @@ use MooseX::Types::DateTime qw{ DateTime };
 
 use namespace::clean -except => 'meta';
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 ########################################################################
 # our types / coercions
@@ -80,7 +80,7 @@ my @defaults = (is => 'rw', lazy_build => 1, isa => 'Maybe[Str]');
 
 has alias => (
     is   => 'rw',
-    isa  => 'Maybe[Str20]',
+    isa  => 'Maybe[Str]',
     lazy_build => 1,
 );
 sub _build_alias { undef }
